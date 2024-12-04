@@ -1,3 +1,4 @@
+// https://adventofcode.com/2024/day/3
 use regex::Regex;
 
 pub fn solve() {

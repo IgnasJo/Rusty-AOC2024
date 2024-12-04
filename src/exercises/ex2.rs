@@ -1,9 +1,9 @@
-use std::fs::read_to_string;
+// https://adventofcode.com/2024/day/2
 
 pub fn solve() {
   const FILENAME: &str = "inputs/2_test.txt";
   let mut unsafe_count: i32 = 0;
-  for line in read_to_string(FILENAME).unwrap().lines() {
+  for line in std::fs::read_to_string(FILENAME).unwrap().lines() {
       let nums = line.trim().split(' ').flat_map(str::parse::<i32>).collect::<Vec<_>>();
       if are_levels_unsafe_pt2(nums) {
           unsafe_count += 1;
