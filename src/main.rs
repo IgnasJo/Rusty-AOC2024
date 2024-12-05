@@ -1,7 +1,7 @@
-use exercises::{ex1, ex2, ex3, ex4};
+use exercises::{ex1, ex2, ex3, ex4, ex5};
 
 mod exercises;
 
 fn main() {
-    ex1::solve_pt2();
+    ex5::solve();
 }
