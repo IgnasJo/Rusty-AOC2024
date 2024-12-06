@@ -1,6 +1,6 @@
 // https://adventofcode.com/2024/day/1
 
-pub fn solve() {
+pub fn solve_pt1() {
   let input = std::fs::read_to_string("inputs/1.txt").unwrap();
   // using RB or AVL trees would be better
   let mut left_list: Vec<i32> = Vec::new();
